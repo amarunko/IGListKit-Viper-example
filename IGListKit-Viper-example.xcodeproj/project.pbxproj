@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		309EEF6821C1614D00D51E5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF6721C1614D00D51E5E /* AppDelegate.swift */; };
-		309EEF6A21C1614E00D51E5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF6921C1614E00D51E5E /* ViewController.swift */; };
-		309EEF6D21C1614E00D51E5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309EEF6B21C1614E00D51E5E /* Main.storyboard */; };
 		309EEF6F21C1614F00D51E5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 309EEF6E21C1614F00D51E5E /* Assets.xcassets */; };
 		309EEF7221C1614F00D51E5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 309EEF7021C1614F00D51E5E /* LaunchScreen.storyboard */; };
 		309EEF7D21C1615000D51E5E /* IGListKit_Viper_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF7C21C1615000D51E5E /* IGListKit_Viper_exampleTests.swift */; };
 		309EEF8821C1615000D51E5E /* IGListKit_Viper_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF8721C1615000D51E5E /* IGListKit_Viper_exampleUITests.swift */; };
+		309EEF9F21C1618100D51E5E /* DemoComponentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9621C1618100D51E5E /* DemoComponentPresenter.swift */; };
+		309EEFA021C1618100D51E5E /* DemoComponentRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9721C1618100D51E5E /* DemoComponentRouter.swift */; };
+		309EEFA121C1618100D51E5E /* DemoComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9821C1618100D51E5E /* DemoComponentViewController.swift */; };
+		309EEFA221C1618100D51E5E /* DemoComponentProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9921C1618100D51E5E /* DemoComponentProtocols.swift */; };
+		309EEFA321C1618100D51E5E /* DemoComponentAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9A21C1618100D51E5E /* DemoComponentAssembly.swift */; };
+		309EEFA421C1618100D51E5E /* DemoComponentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9B21C1618100D51E5E /* DemoComponentInteractor.swift */; };
+		309EEFA521C1618100D51E5E /* DemoComponentPresenter+DemoComponentInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9C21C1618100D51E5E /* DemoComponentPresenter+DemoComponentInteractorOutput.swift */; };
+		309EEFA721C1618100D51E5E /* DemoComponentState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEF9E21C1618100D51E5E /* DemoComponentState.swift */; };
+		309EEFAC21C164B700D51E5E /* DemoDataDisplayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEFAB21C164B700D51E5E /* DemoDataDisplayManager.swift */; };
+		309EEFAF21C1664100D51E5E /* DemoDataComponentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEFAE21C1664100D51E5E /* DemoDataComponentDTO.swift */; };
+		309EEFB321C166AC00D51E5E /* PlainDemoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309EEFB221C166AC00D51E5E /* PlainDemoComponent.swift */; };
+		9E956C9799258B844548157C /* Pods_IGListKit_Viper_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53ACEA62E8A6E7F285CCA78 /* Pods_IGListKit_Viper_example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +46,6 @@
 /* Begin PBXFileReference section */
 		309EEF6421C1614D00D51E5E /* IGListKit-Viper-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IGListKit-Viper-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		309EEF6721C1614D00D51E5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		309EEF6921C1614E00D51E5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		309EEF6C21C1614E00D51E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		309EEF6E21C1614F00D51E5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		309EEF7121C1614F00D51E5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		309EEF7321C1614F00D51E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +55,20 @@
 		309EEF8321C1615000D51E5E /* IGListKit-Viper-exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IGListKit-Viper-exampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		309EEF8721C1615000D51E5E /* IGListKit_Viper_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGListKit_Viper_exampleUITests.swift; sourceTree = "<group>"; };
 		309EEF8921C1615000D51E5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		309EEF9621C1618100D51E5E /* DemoComponentPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentPresenter.swift; sourceTree = "<group>"; };
+		309EEF9721C1618100D51E5E /* DemoComponentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentRouter.swift; sourceTree = "<group>"; };
+		309EEF9821C1618100D51E5E /* DemoComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentViewController.swift; sourceTree = "<group>"; };
+		309EEF9921C1618100D51E5E /* DemoComponentProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentProtocols.swift; sourceTree = "<group>"; };
+		309EEF9A21C1618100D51E5E /* DemoComponentAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentAssembly.swift; sourceTree = "<group>"; };
+		309EEF9B21C1618100D51E5E /* DemoComponentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentInteractor.swift; sourceTree = "<group>"; };
+		309EEF9C21C1618100D51E5E /* DemoComponentPresenter+DemoComponentInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoComponentPresenter+DemoComponentInteractorOutput.swift"; sourceTree = "<group>"; };
+		309EEF9E21C1618100D51E5E /* DemoComponentState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoComponentState.swift; sourceTree = "<group>"; };
+		309EEFAB21C164B700D51E5E /* DemoDataDisplayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataDisplayManager.swift; sourceTree = "<group>"; };
+		309EEFAE21C1664100D51E5E /* DemoDataComponentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDataComponentDTO.swift; sourceTree = "<group>"; };
+		309EEFB221C166AC00D51E5E /* PlainDemoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainDemoComponent.swift; sourceTree = "<group>"; };
+		55E35BBC512CFB8CDDFD7F2B /* Pods-IGListKit-Viper-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKit-Viper-example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKit-Viper-example/Pods-IGListKit-Viper-example.debug.xcconfig"; sourceTree = "<group>"; };
+		B53ACEA62E8A6E7F285CCA78 /* Pods_IGListKit_Viper_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IGListKit_Viper_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A8532539CC931882E72E50 /* Pods-IGListKit-Viper-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGListKit-Viper-example.release.xcconfig"; path = "Pods/Target Support Files/Pods-IGListKit-Viper-example/Pods-IGListKit-Viper-example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E956C9799258B844548157C /* Pods_IGListKit_Viper_example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				309EEF7B21C1615000D51E5E /* IGListKit-Viper-exampleTests */,
 				309EEF8621C1615000D51E5E /* IGListKit-Viper-exampleUITests */,
 				309EEF6521C1614D00D51E5E /* Products */,
+				42A788EE749ED904B71FCE43 /* Pods */,
+				416E8233D9CFC837FACA4D27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +122,8 @@
 		309EEF6621C1614D00D51E5E /* IGListKit-Viper-example */ = {
 			isa = PBXGroup;
 			children = (
+				309EEFA921C1637800D51E5E /* Source */,
 				309EEF6721C1614D00D51E5E /* AppDelegate.swift */,
-				309EEF6921C1614E00D51E5E /* ViewController.swift */,
-				309EEF6B21C1614E00D51E5E /* Main.storyboard */,
 				309EEF6E21C1614F00D51E5E /* Assets.xcassets */,
 				309EEF7021C1614F00D51E5E /* LaunchScreen.storyboard */,
 				309EEF7321C1614F00D51E5E /* Info.plist */,
@@ -125,6 +149,89 @@
 			path = "IGListKit-Viper-exampleUITests";
 			sourceTree = "<group>";
 		};
+		309EEF9521C1616400D51E5E /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				309EEFA821C1618700D51E5E /* DemoComponent */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		309EEFA821C1618700D51E5E /* DemoComponent */ = {
+			isa = PBXGroup;
+			children = (
+				309EEF9621C1618100D51E5E /* DemoComponentPresenter.swift */,
+				309EEF9721C1618100D51E5E /* DemoComponentRouter.swift */,
+				309EEF9921C1618100D51E5E /* DemoComponentProtocols.swift */,
+				309EEF9A21C1618100D51E5E /* DemoComponentAssembly.swift */,
+				309EEF9B21C1618100D51E5E /* DemoComponentInteractor.swift */,
+				309EEF9C21C1618100D51E5E /* DemoComponentPresenter+DemoComponentInteractorOutput.swift */,
+				309EEF9E21C1618100D51E5E /* DemoComponentState.swift */,
+				309EEFAA21C1649D00D51E5E /* View */,
+			);
+			path = DemoComponent;
+			sourceTree = "<group>";
+		};
+		309EEFA921C1637800D51E5E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				309EEFAD21C1662200D51E5E /* Models */,
+				309EEF9521C1616400D51E5E /* PresentationLayer */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		309EEFAA21C1649D00D51E5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				309EEF9821C1618100D51E5E /* DemoComponentViewController.swift */,
+				309EEFAB21C164B700D51E5E /* DemoDataDisplayManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		309EEFAD21C1662200D51E5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				309EEFB121C1669400D51E5E /* PlainModels */,
+				309EEFB021C1668800D51E5E /* IGListKitDTO */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		309EEFB021C1668800D51E5E /* IGListKitDTO */ = {
+			isa = PBXGroup;
+			children = (
+				309EEFAE21C1664100D51E5E /* DemoDataComponentDTO.swift */,
+			);
+			path = IGListKitDTO;
+			sourceTree = "<group>";
+		};
+		309EEFB121C1669400D51E5E /* PlainModels */ = {
+			isa = PBXGroup;
+			children = (
+				309EEFB221C166AC00D51E5E /* PlainDemoComponent.swift */,
+			);
+			path = PlainModels;
+			sourceTree = "<group>";
+		};
+		416E8233D9CFC837FACA4D27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B53ACEA62E8A6E7F285CCA78 /* Pods_IGListKit_Viper_example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42A788EE749ED904B71FCE43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55E35BBC512CFB8CDDFD7F2B /* Pods-IGListKit-Viper-example.debug.xcconfig */,
+				E6A8532539CC931882E72E50 /* Pods-IGListKit-Viper-example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 309EEF8C21C1615000D51E5E /* Build configuration list for PBXNativeTarget "IGListKit-Viper-example" */;
 			buildPhases = (
+				27FC437C91DCFE6A441635B8 /* [CP] Check Pods Manifest.lock */,
 				309EEF6021C1614D00D51E5E /* Sources */,
 				309EEF6121C1614D00D51E5E /* Frameworks */,
 				309EEF6221C1614D00D51E5E /* Resources */,
+				96507C6B8168B943AE1C06C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +340,6 @@
 			files = (
 				309EEF7221C1614F00D51E5E /* LaunchScreen.storyboard in Resources */,
 				309EEF6F21C1614F00D51E5E /* Assets.xcassets in Resources */,
-				309EEF6D21C1614E00D51E5E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +359,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27FC437C91DCFE6A441635B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IGListKit-Viper-example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96507C6B8168B943AE1C06C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IGListKit-Viper-example/Pods-IGListKit-Viper-example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IGListKit/IGListKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IGListKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGListKit-Viper-example/Pods-IGListKit-Viper-example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		309EEF6021C1614D00D51E5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309EEF6A21C1614E00D51E5E /* ViewController.swift in Sources */,
+				309EEFA221C1618100D51E5E /* DemoComponentProtocols.swift in Sources */,
+				309EEF9F21C1618100D51E5E /* DemoComponentPresenter.swift in Sources */,
+				309EEFA721C1618100D51E5E /* DemoComponentState.swift in Sources */,
+				309EEFAC21C164B700D51E5E /* DemoDataDisplayManager.swift in Sources */,
+				309EEFA321C1618100D51E5E /* DemoComponentAssembly.swift in Sources */,
+				309EEFA421C1618100D51E5E /* DemoComponentInteractor.swift in Sources */,
+				309EEFA121C1618100D51E5E /* DemoComponentViewController.swift in Sources */,
+				309EEFB321C166AC00D51E5E /* PlainDemoComponent.swift in Sources */,
+				309EEFA021C1618100D51E5E /* DemoComponentRouter.swift in Sources */,
+				309EEFA521C1618100D51E5E /* DemoComponentPresenter+DemoComponentInteractorOutput.swift in Sources */,
 				309EEF6821C1614D00D51E5E /* AppDelegate.swift in Sources */,
+				309EEFAF21C1664100D51E5E /* DemoDataComponentDTO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +460,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		309EEF6B21C1614E00D51E5E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				309EEF6C21C1614E00D51E5E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		309EEF7021C1614F00D51E5E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -430,6 +589,7 @@
 		};
 		309EEF8D21C1615000D51E5E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55E35BBC512CFB8CDDFD7F2B /* Pods-IGListKit-Viper-example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +607,7 @@
 		};
 		309EEF8E21C1615000D51E5E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A8532539CC931882E72E50 /* Pods-IGListKit-Viper-example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
